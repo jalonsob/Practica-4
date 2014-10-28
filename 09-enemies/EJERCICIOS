@@ -18,16 +18,16 @@
 EJERCICIOS
 
 
-1. Comprueba que todos los tests del prototipo 08 siguen pasando en
+++1. Comprueba que todos los tests del prototipo 08 siguen pasando en
    este prototipo, incluyendo los que has tenido que añadir al hacer
    los ejercicios de los prototipos 07 y 08
 
 
-2. Consulta la especificación de este prototipo en el fichero
+++2. Consulta la especificación de este prototipo en el fichero
    spec/EnemySpec.js
 
 
-3. Estudia la implementación: 
+++3. Estudia la implementación: 
 
    En el fichero game.js se ha añadido a la variable sprites la
    definición de los sprites enemy_purple, enemy_bee, enemy_ship y
@@ -46,7 +46,7 @@ EJERCICIOS
    con el constructor.
 
 
-4. Comprueba cómo variando las constantes A,B,C,D,E,F,G,H se obtienen diversos
+++4. Comprueba cómo variando las constantes A,B,C,D,E,F,G,H se obtienen diversos
    comportamientos. 
 
    Por ejemplo:
