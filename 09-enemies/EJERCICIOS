@@ -61,7 +61,7 @@ EJERCICIOS
    objetos creados con el constructor Enemy().
 
 
-6. Definimos un nuevo requisito que tienes que satisfacer modificando
+++6. Definimos un nuevo requisito que tienes que satisfacer modificando
    la implementación del prototipo que te proporcionamos: la nave del
    usuario deberá poder disparar "bolas de fuego" cuando se pulse la
    tecla 'b' o la tecla 'n'. Crea una nueva clase FireBall que utilice

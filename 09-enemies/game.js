@@ -166,6 +166,15 @@ var PlayerShip = function() {
             this.board.add(new Fireballb(this.x,this.y+this.h/2));
     }
 
+    if(Game.keys['fireN'] && this.reload < 0) {
+            // Esta pulsada la tecla de disparo y ya ha pasado el tiempo reload
+            Game.keys['fire'] = false;
+            this.reload = this.reloadTime;
+
+            // Se añaden al gameboard 2 misiles 
+            this.board.add(new Fireballn(this.x,this.y+this.h/2));
+    }
+
 
     if(!Game.keys['fire']){
         Game.fireOn=false;
@@ -199,7 +208,7 @@ PlayerMissile.prototype.draw = function(ctx)  {
     SpriteSheet.draw(ctx,'missile',this.x,this.y);
 };
 
-//Constructor del lanzallamas derecho.
+//Constructor del lanzallamas izquierdo.
 
 var Fireballb = function(x,y) {
     this.w = SpriteSheet.map['fireball'].w;
@@ -223,6 +232,33 @@ Fireballb.prototype.step = function(dt)  {
 };
 
 Fireballb.prototype.draw = function(ctx)  {
+    SpriteSheet.draw(ctx,'fireball',this.x,this.y);
+};
+
+//Constructor del lanzallamas derecho.
+
+var Fireballn = function(x,y) {
+    this.w = SpriteSheet.map['fireball'].w;
+    this.h = SpriteSheet.map['fireball'].h;
+    this.x = x ; 
+
+    this.y = y - this.h; 
+    this.vy = -1600;
+    this.vx = +30;
+};
+
+Fireballn.prototype.step = function(dt)  {
+    this.x += this.vx * dt;
+    this.y += this.vy * dt;
+    this.vy=this.vy+150;
+    if(this.y > Game.height ||
+       this.x < -this.w||
+       this.x > Game.width) {
+    this.board.remove(this);
+    }
+};
+
+Fireballn.prototype.draw = function(ctx)  {
     SpriteSheet.draw(ctx,'fireball',this.x,this.y);
 };
 

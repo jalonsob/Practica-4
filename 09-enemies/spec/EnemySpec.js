@@ -18,6 +18,7 @@ describe("Clase EnemySpec", function(){
                   enemy_bee: { sx: 79, sy: 0, w: 37, h: 43, frames: 1 },
                   enemy_ship: { sx: 116, sy: 0, w: 42, h: 43, frames: 1 },
                   enemy_circle: { sx: 158, sy: 0, w: 32, h: 33, frames: 1 }
+                },
           draw: function(){},
         };
   
@@ -32,7 +33,7 @@ describe("Clase EnemySpec", function(){
         var gameb = new GameBoard();
         enemy= new Enemy(basic);
         
-        gameb.add(gameb);
+        gameb.add(enemy);
         gameb.add(new Enemy(basic, { x: 200 })); 
 
         spyOn(SpriteSheet, "draw");
@@ -45,19 +46,14 @@ describe("Clase EnemySpec", function(){
     });
 
     it("step",function(){
-
-        var gameb = new GameBoard();
-        
-        enemy= new Enemy(basic);
-        
-        gameb.add(gameb);
-        gameb.add(new Enemy(basic, { x: 200 })); 
-
-        spyOn(SpriteSheet, "draw");
+      enemy = new Enemy({ x: 100, y: -50, sprite: 'enemy_purple', B: 100, C: 2 , E: 100 });
+      enemy.step(1);
     
-        gameb.step(1);
-        
-        expect(gameb.draw).toHaveBeenCalled();
+      expect(enemy.t).toEqual(1);
+      expect(enemy.vx).toEqual(enemy.A + enemy.B * Math.sin(enemy.C * enemy.t + enemy.D));
+      expect(enemy.vy).toEqual(enemy.E + enemy.F * Math.sin(enemy.G * enemy.t + enemy.H));
+      expect(enemy.x).toEqual(100 + enemy.vx * 1);
+      expect(enemy.y).toEqual(-50 + enemy.vy * 1);
  
     });
 
