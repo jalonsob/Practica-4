@@ -57,7 +57,7 @@ EJERCICIOS
      va moviéndose de izquierda a derecha
 
 
-5. Escribe en el fichero spec/EnemySpec.js pruebas unitarias para los
+++5. Escribe en el fichero spec/EnemySpec.js pruebas unitarias para los
    objetos creados con el constructor Enemy().
 
 
