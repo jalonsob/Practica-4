@@ -232,7 +232,7 @@ Fireballb.prototype.step = function(dt)  {
 };
 
 Fireballb.prototype.draw = function(ctx)  {
-    SpriteSheet.drawLittle(ctx,'fireball',this.x,this.y);
+    SpriteSheet.draw(ctx,'fireball',this.x,this.y);
 };
 
 //Constructor del lanzallamas derecho.
@@ -259,7 +259,7 @@ Fireballn.prototype.step = function(dt)  {
 };
 
 Fireballn.prototype.draw = function(ctx)  {
-    SpriteSheet.drawLittle(ctx,'fireball',this.x,this.y);
+    SpriteSheet.draw(ctx,'fireball',this.x,this.y);
 };
 
 

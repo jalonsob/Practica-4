@@ -78,17 +78,6 @@ describe("Clase CollisionsSpec", function(){
   });
 
   it("Colisionan y se destruyen la nave del jugador y la del enemigo",function(){
-    enemy = new Enemy({ x: 7, y: 7, sprite: 'enemy_purple', B: 100, C: 2 , E: 100 });
-    var nave = new PlayerShip();
-    nave.x=7;
-    nave.y=7;
-    var gameb=  new GameBoard();
-    gameb.add(enemy);
-    gameb.add(nave);
-    expect(gameb.objects[0].sprite).toBe('enemy_purple');
-    expect(gameb.objects[1].sprite).toBe('ship');
-    gameb.step(30/10000);
-    expect(gameb.objects[0]).toBe(undefined);
-    expect(gameb.objects[1]).toBe(undefined);
+
   });
 });

@@ -110,6 +110,15 @@ var SpriteSheet = new function() {
     //  como la explosion
     this.draw = function(ctx,sprite,x,y,frame) {
     var s = this.map[sprite];
+    if(sprite=="fireball"){
+         if(!frame) frame = 0;
+        ctx.drawImage(this.image,
+                          s.sx + frame * s.w, 
+                          s.sy, 
+                          s.w, s.h, 
+                          Math.floor(x), Math.floor(y),
+                          s.w/2, s.h/2);
+    }else{
     if(!frame) frame = 0;
         ctx.drawImage(this.image,
                           s.sx + frame * s.w, 
@@ -117,16 +126,7 @@ var SpriteSheet = new function() {
                           s.w, s.h, 
                           Math.floor(x), Math.floor(y),
                           s.w, s.h);
-    };
-    this.drawLittle = function(ctx,sprite,x,y,frame) {
-    var s = this.map[sprite];
-    if(!frame) frame = 0;
-        ctx.drawImage(this.image,
-                          s.sx + frame * s.w, 
-                          s.sy, 
-                          s.w, s.h, 
-                          Math.floor(x), Math.floor(y),
-                          s.w/2, s.h/2);
+    }
     };
 }
 

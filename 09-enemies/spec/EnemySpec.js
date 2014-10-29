@@ -46,14 +46,15 @@ describe("Clase EnemySpec", function(){
     });
 
     it("step",function(){
-      enemy = new Enemy({ x: 100, y: -50, sprite: 'enemy_purple', B: 100, C: 2 , E: 100 });
-      enemy.step(1);
     
-      expect(enemy.t).toEqual(1);
-      expect(enemy.vx).toEqual(enemy.A + enemy.B * Math.sin(enemy.C * enemy.t + enemy.D));
-      expect(enemy.vy).toEqual(enemy.E + enemy.F * Math.sin(enemy.G * enemy.t + enemy.H));
-      expect(enemy.x).toEqual(100 + enemy.vx * 1);
-      expect(enemy.y).toEqual(-50 + enemy.vy * 1);
+      enemy = new Enemy({ x: 100, y: -50, sprite: 'enemy_purple', B: 100, C: 2 , E: 100 });
+      var gameb=  new GameBoard();
+      gameb.add(enemy);
+      spyOn(gameb, "remove");
+      enemy.step(200);
+      expect(gameb.remove).toHaveBeenCalled(); 
+    
+
  
     });
 
