@@ -32,7 +32,7 @@ var Game = new function() {
     };
 
     // Gestión de la entrada (teclas para izda/derecha y disparo)
-    var KEY_CODES = { 37:'left', 39:'right', 32 :'fire' };
+    var KEY_CODES = { 37:'left', 39:'right', 32 :'fire' ,66:'fireB',78:'fireN'};
     this.keys = {};
 
     this.setupInput = function() {
@@ -108,14 +108,24 @@ var SpriteSheet = new function() {
     //  frame para seleccionar el frame de un sprite que tenga varios
     //  como la explosion
     this.draw = function(ctx,sprite,x,y,frame) {
-	var s = this.map[sprite];
-	if(!frame) frame = 0;
-	ctx.drawImage(this.image,
-                      s.sx + frame * s.w, 
-                      s.sy, 
-                      s.w, s.h, 
-                      Math.floor(x), Math.floor(y),
-                      s.w, s.h);
+    var s = this.map[sprite];
+    if(sprite=="fireball"){
+        if(!frame) frame = 0;
+            ctx.drawImage(this.image,
+                              s.sx + frame * s.w, 
+                              s.sy, 
+                              s.w, s.h, 
+                              Math.floor(x), Math.floor(y),
+                              s.w/2, s.h/2);
+    }else{
+        if(!frame) frame = 0;
+        ctx.drawImage(this.image,
+                          s.sx + frame * s.w, 
+                          s.sy, 
+                          s.w, s.h, 
+                          Math.floor(x), Math.floor(y),
+                          s.w, s.h);
+    }
     };
 }
 

@@ -18,13 +18,13 @@
 EJERCICIOS
 
 
-1. Comprueba que todos los tests del prototipo 11-collission siguen
+++1. Comprueba que todos los tests del prototipo 11-collission siguen
    pasando en este prototipo
 
-2. Consulta la especificación de este prototipo en el fichero
+++2. Consulta la especificación de este prototipo en el fichero
    spec/LevelSpec.js
 
-3. Estudia los cambios que se han realizado en el código para
+++3. Estudia los cambios que se han realizado en el código para
    implementar los niveles de juego en este prototipo:
 
    Definición de tipos de enemigos:
@@ -90,12 +90,12 @@ EJERCICIOS
          terminado el nivel
 
 
-4. Añade la animación de una explosión para que se muestre cuando una
+++4. Añade la animación de una explosión para que se muestre cuando una
    nave enemiga colisione con la nave del jugador. El juego no deberá
    finalizar hasta que no termine la animación de la explosión de la
    nave del jugador.
 
-5. Experimenta con los valores de las definiciones de los enemigos en
+++5. Experimenta con los valores de las definiciones de los enemigos en
    la variable enemies de game.js para definir diferentes patrones de
    movimiento.
 
@@ -108,7 +108,7 @@ EJERCICIOS
    2. Hasta que el usuario no pulse la tecla espacio en esta pantalla
    no comenzará el nivel 2.
 
-7. Añade tests unitarios para Level al fichero spec/LevelSpec.js
+++7. Añade tests unitarios para Level al fichero spec/LevelSpec.js
 
 8. Añade pruebas de integración al fichero spec/LevelSpec.js que
    prueben:

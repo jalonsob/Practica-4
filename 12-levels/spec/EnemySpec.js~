@@ -52,7 +52,7 @@ describe("Clase EnemySpec", function(){
       gameb.add(enemy);
       spyOn(gameb, "remove");
       enemy.step(200);
-      expect(gameb.remove).toHaveBeenCalled(); 
+      expect(enemy.remove).toHaveBeenCalled(); 
     
 
  
