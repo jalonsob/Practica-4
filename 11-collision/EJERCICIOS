@@ -21,10 +21,10 @@ EJERCICIOS
 ++1. Comprueba que todos los tests del prototipo 10-refactor siguen pasando en
    este prototipo
 
-2. Consulta la especificación de este prototipo en el fichero
+++2. Consulta la especificación de este prototipo en el fichero
    spec/ColissionsSpec.js
 
-3. Estudia los cambios que se han realizado en el código para detectar
+++3. Estudia los cambios que se han realizado en el código para detectar
    los dos tipos de colisiones:
 
    Se han definido en game.js cinco tipos de objetos:
@@ -139,7 +139,7 @@ EJERCICIOS
 
 
    
-4. Nuevo requisito: Haz que las bolas de fuego que añadiste en los
+++4. Nuevo requisito: Haz que las bolas de fuego que añadiste en los
    ejercicios del prototipo 09-enemies se comporten de modo similar a
    los misiles: 
 
