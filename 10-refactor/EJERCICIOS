@@ -125,7 +125,7 @@ EJERCICIOS
    PlayerMissile() y Enemy().
 
 
-4. Comprueba que todos los tests del prototipo 09-enemies siguen
+++4. Comprueba que todos los tests del prototipo 09-enemies siguen
    pasando en este prototipo. 
 
    En este prototipo se ha realizado una refactorización del código de
