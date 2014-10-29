@@ -227,7 +227,7 @@ Fireballb.prototype.step = function(dt)  {
     var collision = this.board.collide(this,OBJECT_ENEMY);
     if(collision){
         collision.hit(this.damage);
-        this.board.remove(this);
+      
     }else if(this.y > Game.height ||this.x < -this.w||this.x > Game.width) {
         this.board.remove(this);
     }
@@ -251,7 +251,7 @@ Fireballn.prototype.step = function(dt)  {
     var collision = this.board.collide(this,OBJECT_ENEMY);
     if(collision){
         collision.hit(this.damage);
-        this.board.remove(this);
+        
     }else if(this.y > Game.height ||this.x < -this.w||this.x > Game.width) {
         this.board.remove(this);
     }

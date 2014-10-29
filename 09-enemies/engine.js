@@ -109,14 +109,24 @@ var SpriteSheet = new function() {
     //  frame para seleccionar el frame de un sprite que tenga varios
     //  como la explosion
     this.draw = function(ctx,sprite,x,y,frame) {
-	var s = this.map[sprite];
-	if(!frame) frame = 0;
-	ctx.drawImage(this.image,
-                      s.sx + frame * s.w, 
-                      s.sy, 
-                      s.w, s.h, 
-                      Math.floor(x), Math.floor(y),
-                      s.w, s.h);
+    var s = this.map[sprite];
+    if(!frame) frame = 0;
+        ctx.drawImage(this.image,
+                          s.sx + frame * s.w, 
+                          s.sy, 
+                          s.w, s.h, 
+                          Math.floor(x), Math.floor(y),
+                          s.w, s.h);
+    };
+    this.drawLittle = function(ctx,sprite,x,y,frame) {
+    var s = this.map[sprite];
+    if(!frame) frame = 0;
+        ctx.drawImage(this.image,
+                          s.sx + frame * s.w, 
+                          s.sy, 
+                          s.w, s.h, 
+                          Math.floor(x), Math.floor(y),
+                          s.w/2, s.h/2);
     };
 }
 

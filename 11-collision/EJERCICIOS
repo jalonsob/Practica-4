@@ -163,16 +163,16 @@ EJERCICIOS
    pruebas en las que intervengan objetos de estas clases, y no dobles de
    ellos, para probar:
 
-   - que un misil con el daño suficiente que colisiona con una nave
+   + que un misil con el daño suficiente que colisiona con una nave
      enemiga la destruye, eliminándose la nave y el misil del tablero
      de juegos
 
-   - que un misil con daño insuficiente que colisiona con una nave
+   + que un misil con daño insuficiente que colisiona con una nave
      enemiga no la destruye, sino que reduce la salud de la nave
      enemiga, y desaparece del tablero de juegos sin que desaparezca
      la nave enemiga dañada
 
-   - que una bola de fuego que colisiona con una nave la destruye
+   + que una bola de fuego que colisiona con una nave la destruye
      siempre, desapareciendo del tablero de juegos la nave enemiga, y
      no desapareciendo la bola de fuego
 
