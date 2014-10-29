@@ -119,7 +119,7 @@ EJERCICIOS
    los objetos construidos con Sprite()
 
 
-++3. Realiza la refactorización del constructor/clase FireBall que
+3. Realiza la refactorización del constructor/clase FireBall que
    implementaste en el prototipo anterior para la bola de fuego, de
    manera similar a cómo se han refactorizado PlayerShip(),
    PlayerMissile() y Enemy().

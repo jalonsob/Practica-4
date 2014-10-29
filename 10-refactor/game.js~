@@ -219,7 +219,7 @@ Fireballb.prototype.step = function(dt)  {
 
 var Fireballn = function(x,y) {
     this.setup("fireball",{vy:-1600,vx:+30});
-    this.x = x ; 
+    this.x = x - this.w/2; 
     this.y = y - this.h; 
 
 };
