@@ -99,7 +99,7 @@ EJERCICIOS
    la variable enemies de game.js para definir diferentes patrones de
    movimiento.
 
-6. Añade otro nivel al juego, y modifica el juego para que termine
+++6. Añade otro nivel al juego, y modifica el juego para que termine
    cuando hayan terminado los dos niveles, o cuando se mate la nave
    enemiga.
 
@@ -125,8 +125,6 @@ EJERCICIOS
      alcanza a la nave del jugador, el juego termina, perdiendo el
      jugador.
 
-   - opcionalmente, añade otras pruebas de integración que consideres
-     oportunas para probar los niveles.
  
    Para estas pruebas de integración puedes utilizar todos los objetos
    reales (no dobles) que consideres razonable. Recuerda que a
